@@ -29,3 +29,23 @@ greetPerson('k');
 // }
 
 // greetPerson('k');
+
+var a = 1;
+var b = 2;
+if (a === 1) {
+  var a = 10;
+  let b = 20;
+  console.log(a);
+  //   expected: 10
+  //   because use var and can redeclare
+  console.log(b);
+  //   expected :20
+  //   because use let ,in  block scope
+}
+
+console.log(a);
+// expected: 10
+// because use var and can redeclare
+console.log(b);
+// expected : 2
+// because use var and global scope
